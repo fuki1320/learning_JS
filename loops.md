@@ -86,12 +86,13 @@ Condition is evaluated before executing the loop. If the condition is true, the 
 A while loop becomes infinite if the condition specified in the loop header never becomes false. It happens if the increments are not specified, unintended logic is implemented (i.e. using floating-point arithmetic) or inadequate exit condition is used (this will lead to the loop never meeting the specified conditions if they're not implemented enough.)
 
 
+      let sugar = 5
 
-
-let sugar = 5
-let added = 0
-while (++added < sugar)
-{console.log(added + ' cup was added[while loop]');}
+      let added = 0
+      
+      while (++added < sugar)
+      
+      {console.log(added + ' cup was added[while loop]');}
 
 
 

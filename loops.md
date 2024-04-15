@@ -6,7 +6,6 @@ _(Built upon code from Codecademy)_
 
 ## _FOR_ loop
 A for loop repeats until a specified condition evaluates to false. 
-Or it repeatedly executes a block of code as long as a specified condition is true.
 
 - A for statement looks as follows:
 
@@ -46,13 +45,26 @@ In most cases if the increment afterthought isn't specified, it will result in i
 
         };
 
-- The for loop has a clear initialization, condition, and increment section. It iterates **from 1 to cupsOfSugar - 1 **** _(i.e., 4 iterations when cupsOfSugar is 5)_**.
+- The for loop has a clear initialization, condition, and increment (aka afterthought) section. **It iterates from 1 to cupsOfSugar - 1 (i.e., 4 iterations when cupsOfSugar is 5)**.
 - The loop executes exactly as many times as specified in the condition and doesn't go beyond that limit (aka doesn't go beyond the value of 5.)
 - For example, if the value of variable _cupsOfSugar_ is 5, the loop **iterates 4 times**, adding 1 cup of sugar each time, resulting in a total of 4 cups added, because the **value of cupsAdded must be less than the value of cupsOfSugar** as it is stated in condition of the loop!
 
 
+## _WHILE_ loop
+- A while statement executes its statements as long as a specified condition evaluates to true.
+- If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop (inside the loop).
+- **The condition test occurs before statement in the loop is executed.** If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops, and control is passed to the statement following while.
 
-// W H I L E   L O O P
+- A while statement looks as follows:
+
+      while (condition) {
+
+      statement
+
+      };
+
+
+
 
 let sugar = 5
 let added = 0

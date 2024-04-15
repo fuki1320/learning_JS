@@ -8,7 +8,9 @@ _(Built upon code from Codecademy)_
 - A for loop repeats until a specified condition evaluates to false. (The JavaScript for loop is similar to the Java and C for loop.)
 
 - A for statement looks as follows:
+
   for (initialization; condition; afterthought) {
+
   statement };
 
 - A for loop is often used when you know **how many times you want to iterate**.

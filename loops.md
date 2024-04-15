@@ -50,7 +50,16 @@ In most cases if the increment afterthought isn't specified, it will result in i
 
 - The for loop has a clear initialization, condition, and increment (aka afterthought) section. **It iterates from 1 to cupsOfSugar - 1 (i.e., 4 iterations when cupsOfSugar is 5)**.
 - The loop executes exactly as many times as specified in the condition and doesn't go beyond that limit (aka doesn't go beyond the value of 5.)
+- **The condition is tested first, if it's evaluated as a truthy statement, the loop's body is executed and only then the value of the variable is incremented.**
 - For example, if the value of variable _cupsOfSugar_ is 5, the loop **iterates 4 times**, adding 1 cup of sugar each time, resulting in a total of 4 cups added, because the **value of cupsAdded must be less than the value of cupsOfSugar** as it is stated in condition of the loop!
+  
+| Iterations  | cupsAdded initial value | Iteration condition | Boolean value | Statement    | Incremented value of cupsAdded  (for the upcoming iteration) |
+|-------------|-------------------------|---------------------|---------------|--------------|--------------------------------------------------------------|
+| Iteration 1 | 1                       | 1<5                 | true          | executed     | 2                                                            |
+| Iteration 2 | 2                       | 2<5                 | true          | executed     | 3                                                            |
+| Iteration 3 | 3                       | 3<5                 | true          | executed     | 4                                                            |
+| Iteration 4 | 4                       | 4<5                 | true          | executed     | 5                                                            |
+| Iteration 5 | 5                       | 5<5                 | false         | not executed |                                                              |
 
 
 ## _WHILE_ loop
@@ -95,7 +104,7 @@ A while loop becomes infinite if the condition specified in the loop header neve
 - ++cupsAdded is a **pre-increment** operation, which means **cupsAdded is incremented by 1 before being compared** to cupsOfSugar.
 - The loop continues executing as long as the incremented value of added is less than cupsOfSugar.
 - In this case, **the loop iterates exactly 4 times, until the condition becomes falsy**. Meaning cupsAdded is pre-incremented 4 times in total (by 1 in each iteration) to be still less than the value of the variable cupsOfSugar.
-- 
+  
 | Iterations  | cupsAdded initial value | Incremented value of cupsAdded | Iteration condition | Boolean value           | Statement    |
 |-------------|-------------------------|--------------------------------|---------------------|-------------------------|--------------|
 | Iteration 1 | 0                       | 1                              | 1<5                 | true                    | executed     |

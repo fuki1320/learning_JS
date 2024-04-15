@@ -5,7 +5,7 @@ Differences between For, While and Do-While loops in example code:
 _(Built upon code from Codecademy)_
 
 ## _FOR_ loop
-- A for loop repeats until a specified condition evaluates to false. (The JavaScript for loop is similar to the Java and C for loop.)
+A for loop repeats until a specified condition evaluates to false. (The JavaScript for loop is similar to the Java and C for loop.)
 
 - A for statement looks as follows:
 
@@ -13,13 +13,14 @@ _(Built upon code from Codecademy)_
 
       statement };
 
-- A for loop is often used when you know **how many times you want to iterate**.
+A for loop is often used when you know **how many times you want to iterate**.
+
 
 - In the code below, a for loop is used with an initialization (let cupsAdded = 1), condition (cupsAdded < cupsOfSugar), and increment (cupsAdded++).
 
-> This loop will execute as long as **cupsAdded is less than cupsOfSuga**r.
+- This loop will execute as long as **cupsAdded is less than cupsOfSuga**r.
 
-> This loop will execute a **specific number of times**, iterating **from 1 up to cupsOfSugar (its numeric value) - 1**
+- This loop will execute a **specific number of times**, iterating **from 1 up to cupsOfSugar (its numeric value) - 1**
 
         _// FOR loop example_
 

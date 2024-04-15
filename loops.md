@@ -126,7 +126,7 @@ A while loop becomes infinite if the condition specified in the loop header neve
   
 1. **Initialization:** First, any variables needed in the loop are initialized (this usually happens outside the loop.)
 2. **Statement(s):** Code of block that is always executed before the condition of the loop is checked.
-3. **Condition:** If the condition evaluates to true, the loop continues, and the code block is executed again. If the condition evaluates to false, the loop terminates, and the program continues with the next statement after the loop.
+3. **Condition(s):** If the condition evaluates to true, the loop continues, and the code block is executed again. If the condition evaluates to false, the loop terminates, and the program continues with the next statement after the loop.
 4. **Increment or Update Variables:** If the loop involves any variables that are updated inside the code block, those updates are typically done before the condition is evaluated again.
 
             var i = 1;

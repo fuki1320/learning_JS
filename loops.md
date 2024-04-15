@@ -19,8 +19,11 @@ Or it repeatedly executes a block of code as long as a specified condition is tr
 - **Statement(s):** This is the block of code that you want to execute repeatedly as long as the condition remains true. It can be a single statement or a block of statements enclosed in curly braces {}.
 
       for (int i = 0; i < 10; i++) {
+  
       // Statement(s) to be executed repeatedly
+  
       console.log("the value of i is ", i);
+  
       };
 
 A for loop is often used when you know **how many times you want to iterate**.

@@ -18,7 +18,7 @@ A for loop is often used when you know **how many times you want to iterate**.
 
 - In the code below, a for loop is used with an initialization (let cupsAdded = 1), condition (cupsAdded < cupsOfSugar), and increment (cupsAdded++).
 
-- This loop will execute as long as **cupsAdded is less than cupsOfSuga**r.
+- This loop will execute as long as **cupsAdded is less than cupsOfSugar**.
  
 - This loop will execute a **specific number of times**, iterating **from 1 up to cupsOfSugar (its numeric value) - 1**
 
@@ -34,7 +34,7 @@ A for loop is often used when you know **how many times you want to iterate**.
 
 - The for loop has a clear initialization, condition, and increment section. It iterates **from 1 to cupsOfSugar - 1 ****_(i.e., 4 iterations when cupsOfSugar is 5)**_.
 - The loop executes exactly as many times as specified in the condition and doesn't go beyond that limit.
-- For example, if the value of variable _cupsOfSugar_ is 5, the loop **iterates 4 times**, adding 1 cup of sugar each time, resulting in a total of 4 cups added, because** the value of cupsAdded must be less than the value of cupsOfSugar** as it is stated in condition of the loop!
+- For example, if the value of variable _cupsOfSugar_ is 5, the loop **iterates 4 times**, adding 1 cup of sugar each time, resulting in a total of 4 cups added, because the **value of cupsAdded must be less than the value of cupsOfSugar** as it is stated in condition of the loop!
 
 
 

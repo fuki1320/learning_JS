@@ -9,16 +9,16 @@ _(Built upon code from Codecademy)_
 
 - A for statement looks as follows:
 
-  for (initialization; condition; afterthought) {
+      for (initialization; condition; afterthought) {
 
-  statement };
+      statement };
 
 - A for loop is often used when you know **how many times you want to iterate**.
 - In the code below, a for loop is used with an initialization (let cupsAdded = 1), condition (cupsAdded < cupsOfSugar), and increment (cupsAdded++).
 
-      **This loop will execute as long as cupsAdded is less than cupsOfSugar.**
+   **This loop will execute as long as cupsAdded is less than cupsOfSugar.**
 
-      This loop will execute a **specific number of times**, iterating **from 1 up to cupsOfSugar (its numeric value) - 1**
+  This loop will execute a **specific number of times**, iterating **from 1 up to cupsOfSugar (its numeric value) - 1**
 
 _// FOR loop example_
 let cupsOfSugar = 5

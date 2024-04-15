@@ -27,6 +27,7 @@ Or it repeatedly executes a block of code as long as a specified condition is tr
       };
 
 A for loop is often used when you know **how many times you want to iterate**.
+
 In most cases if the increment afterthought isn't specified, it will result in infinite loop. _This is because without an increment or decrement, the loop control variable will never change its value, potentially preventing the loop condition from ever becoming false._
 
 

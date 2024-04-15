@@ -82,7 +82,8 @@ In most cases if the increment afterthought isn't specified, it will result in i
 While loop are often used when **the number of iterations is not known** beforehand and depends on a specific condition.
 
 Condition is evaluated before executing the loop. If the condition is true, the code inside the loop is executed. If the condition is false, the code block is skipped, and the program continues to execute the code after the loop. After executing the code block, the condition is evaluated again. If it's still true, the code block is executed again. This process repeats until the condition becomes false.
-A while loop becomes infinite if the condition specified in the loop header never becomes false. It happens if the increments are not specified, unintended logic is implemented (i.e. using floating-point arithmetic) or inadequate exit condition is used (this will lead to the loop never meeting the specified conditions if they're not implemented enough)
+
+A while loop becomes infinite if the condition specified in the loop header never becomes false. It happens if the increments are not specified, unintended logic is implemented (i.e. using floating-point arithmetic) or inadequate exit condition is used (this will lead to the loop never meeting the specified conditions if they're not implemented enough.)
 
 
 

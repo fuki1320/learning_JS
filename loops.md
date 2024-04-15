@@ -46,7 +46,7 @@ In most cases if the increment afterthought isn't specified, it will result in i
 
         };
 
-- The for loop has a clear initialization, condition, and increment section. It iterates **from 1 to cupsOfSugar - 1 ****_(i.e., 4 iterations when cupsOfSugar is 5)**_.
+- The for loop has a clear initialization, condition, and increment section. It iterates **from 1 to cupsOfSugar - 1 **** _(i.e., 4 iterations when cupsOfSugar is 5)_**.
 - The loop executes exactly as many times as specified in the condition and doesn't go beyond that limit (aka doesn't go beyond the value of 5.)
 - For example, if the value of variable _cupsOfSugar_ is 5, the loop **iterates 4 times**, adding 1 cup of sugar each time, resulting in a total of 4 cups added, because the **value of cupsAdded must be less than the value of cupsOfSugar** as it is stated in condition of the loop!
 

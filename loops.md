@@ -5,13 +5,23 @@ Differences between For, While and Do-While loops in example code:
 _(Built upon code from Codecademy)_
 
 ## _FOR_ loop
-A for loop repeats until a specified condition evaluates to false. (The JavaScript for loop is similar to the Java and C for loop.)
+A for loop repeats until a specified condition evaluates to false. 
+Or it repeatedly executes a block of code as long as a specified condition is true.
 
 - A for statement looks as follows:
 
       for (initialization; condition; afterthought) {
 
       statement };
+- **Initialization:** This is where you initialize your loop control variable(s). It typically sets the initial value of a counter variable. For example, int i = 0; initializes a variable named i with the value of 0.
+- **Condition:** This is the condition that is evaluated before each iteration of the loop. If the condition evaluates to true, the loop continues; if it evaluates to false, the loop terminates. For example, i < 10; checks if the variable i is less than 10.
+- **Afterthought:** This is an expression that is executed at the end of each iteration of the loop. It's commonly used to update the loop control variable(s). For example, i++ increments the value of i by 1 after each iteration.
+- **Statement(s):** This is the block of code that you want to execute repeatedly as long as the condition remains true. It can be a single statement or a block of statements enclosed in curly braces {}.
+
+      for (int i = 0; i < 10; i++) {
+      // Statement(s) to be executed repeatedly
+      console.log("the value of i is ", i);
+      };
 
 A for loop is often used when you know **how many times you want to iterate**.
 

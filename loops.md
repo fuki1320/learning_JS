@@ -34,10 +34,9 @@ A for loop is often used when you know **how many times you want to iterate**.
 In most cases if the increment afterthought isn't specified, it will result in infinite loop. _This is because without an increment or decrement, the loop control variable will never change its value, potentially preventing the loop condition from ever becoming false._
 
 
+### Specific example of For loop 
 - In the code below, a for loop is used with an initialization (let cupsAdded = 1), condition (cupsAdded < cupsOfSugar), and increment (cupsAdded++).
-
 - This loop will execute as long as **cupsAdded is less than cupsOfSugar**.
- 
 - This loop will execute a **specific number of times**, iterating **from 1 up to cupsOfSugar (its numeric value) - 1**
 
       let cupsOfSugar = 5
@@ -48,8 +47,8 @@ In most cases if the increment afterthought isn't specified, it will result in i
   
       };
 
-- The for loop has a clear initialization, condition, and increment (aka afterthought) section. **It iterates from 1 to cupsOfSugar - 1 (i.e., 4 iterations when cupsOfSugar is 5)**.
-- The loop executes exactly as many times as specified in the condition and doesn't go beyond that limit (aka doesn't go beyond the value of 5.)
+- The for loop has a clear initialization, condition, and increment (in this case meaning afterthought) section. **It iterates from 1 to cupsOfSugar - 1 (i.e., 4 iterations when cupsOfSugar is 5)**.
+- The loop executes exactly as many times as specified in the condition and doesn't go beyond that limit (doesn't go beyond the value of 5.)
 - **The condition is tested first, if it's evaluated as a truthy statement, the loop's body is executed and only then the value of the variable is incremented.**
 - For example, if the value of variable _cupsOfSugar_ is 5, the loop **iterates 4 times**, adding 1 cup of sugar each time, resulting in a total of 4 cups added, because the **value of cupsAdded must be less than the value of cupsOfSugar** as it is stated in condition of the loop!
   
@@ -76,7 +75,7 @@ In most cases if the increment afterthought isn't specified, it will result in i
       };
         
 1. **Condition:** Inside the parentheses, you specify the condition that needs to be evaluated. As long as this condition evaluates to true, the loop will continue to execute. If the condition evaluates to false initially, the statement inside the loop will not be executed at all.
-2. **Statement:** This is the statement that you want to execute repeatedly as long as the condition remains true. It can be a single statement or a block of statements enclosed in curly braces {}.
+2. **Statement(s):** This is the statement that you want to execute repeatedly as long as the condition remains true. It can be a single statement or a block of statements enclosed in curly braces {}.
 
          let count = 0;
       
@@ -84,12 +83,13 @@ In most cases if the increment afterthought isn't specified, it will result in i
             
          console.log(count++);
       
-While loop are often used when **the number of iterations is not known** beforehand and depends on a specific condition.
+While loops are often used when **the number of iterations is not known** beforehand and depends on a specific condition.
 
 Condition is evaluated before executing the loop. If the condition is true, the code inside the loop is executed. If the condition is false, the code block is skipped, and the program continues to execute the code after the loop. After executing the code block, the condition is evaluated again. If it's still true, the code block is executed again. This process repeats until the condition becomes false.
 
-A while loop becomes infinite if the condition specified in the loop header never becomes false. It happens if the increments are not specified, unintended logic is implemented (i.e. using floating-point arithmetic) or inadequate exit condition is used (this will lead to the loop never meeting the specified conditions if they're not implemented enough.)
+A while loop becomes infinite if the condition specified in the loop header never becomes false. It happens if the increments are not specified, unintended logic is implemented (i.e., using floating-point arithmetic) or inadequate exit condition is used (this will lead to the loop never meeting the specified conditions if they're not implemented enough.)
 
+### Specific example of While loop 
 - Two variables are initialized (cupsOfSugar and cupsAdded.)
 - The while loop starts with the condition ++cupsAdded < cupsOfSugar (aka incremented value of cupsAdded can't be greater than cupsOfSugar.)
 
@@ -114,16 +114,64 @@ A while loop becomes infinite if the condition specified in the loop header neve
 | Iteration 5 | 4                       | 5                              | 5<5                 | false (end of the loop) | not executed |
 
 
-// D O   W H I L E   L O O P 
+## _Do-While_ loop
+**The do-while statement repeats until a specified condition evaluates to false. **
+- A do-while statement looks as follows:
 
-// defining both variables 
-let cupsOfSugaR2 = 5;
-let cupsAdded2 = 0;
+      do {
+  
+        statement
+  
+      } while (condition);
+  
+1. **Initialization:** First, any variables needed in the loop are initialized (this usually happens outside the loop.)
+2. **Statement(s):** Code of block that is always executed before the condition of the loop is checked.
+3. **Condition:** If the condition evaluates to true, the loop continues, and the code block is executed again. If the condition evaluates to false, the loop terminates, and the program continues with the next statement after the loop.
+4. **Increment or Update Variables:** If the loop involves any variables that are updated inside the code block, those updates are typically done before the condition is evaluated again.
 
-do {
-  cupsAdded4++
-  console.log(cupsAdded4 + ' cup was added [do-while loop]');
-} while (cupsAdded4 < cupsOfSugarNeeded4);
+            var i = 1;
+   
+            do {
+   
+            console.log(i);
+   
+            i++;
+   
+            } while (i <= 5);
+
+Do-while loops are particularly used when you want to ensure that a **block of code (aka loop statement) runs at least once, regardless of whether the condition is initially true or false.** This can be useful in situations where you need to perform some action and then check a condition afterward to determine if the action should be repeated.
+
+A do-while loop becomes infinite if the condition never becomes false. This can happen when dealing with user input or never changing conditions of specified statements. 
+
+### Specific example of Do-while loop 
+ - Two variables are initialized and their values specified outside the loop.
+ - Two statements are created inside the do cycle. The variable cupsAdded is incremented by 1 each iteration, while console logs the current number (value) of cupsAdded.
+
+            let cupsOfSugar = 5;
+   
+            let cupsAdded = 0;
+
+            do {
+  
+              cupsAdded++
+ 
+              console.log(cupsAdded + ' cup was added [do-while loop]');
+
+            } while (cupsAdded < cupsOfSugar);
+
+- The while keyword is followed by a condition that states cupsAdded < cupsOfSugar. This condition checks if the number of cupsAdded is less than the total of cupsOfSugar. If the condition is truthy, the loop continues. Otherwise, it terminates.
+- The loop will execute at least once because it's a do-while loop. Meaning, even if cupsAdded is initially greater than or equal to cupsOfSugar, **the loop will still execute once, because it executes statements before checking the condition.**
+- This loop will iterate 5 times, though the last iteration is executed its condition is falsy, which leads to the loop termination.
+  
+| Iterations  | cupsAdded initial value | Incremented value of cupsAdded  (for the upcoming iteration) | Iteration condition | Statement | Boolean value           |
+|-------------|-------------------------|--------------------------------------------------------------|---------------------|-----------|-------------------------|
+| Iteration 1 | 0                       | 1                                                            | 1<5                 | executed  | true                    |
+| Iteration 2 | 1                       | 2                                                            | 2<5                 | executed  | true                    |
+| Iteration 3 | 2                       | 3                                                            | 3<5                 | executed  | true                    |
+| Iteration 4 | 3                       | 4                                                            | 4<5                 | executed  | true                    |
+| Iteration 5 | 4                       | 5                                                            | 5<5                 | executed  | false (loop terminates) |
+
+
 
 
 
@@ -138,9 +186,4 @@ while(added2 < sugar2) {
 }
 
 
-//for loop
-let sugar3 = 5
 
-for (let added3 = 1; added3 < sugar3; added3++){
-    console.log (added3 + ' cup was added [for loop]');
-}

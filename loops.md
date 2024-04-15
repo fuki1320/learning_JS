@@ -20,12 +20,15 @@ _(Built upon code from Codecademy)_
 
   This loop will execute a **specific number of times**, iterating **from 1 up to cupsOfSugar (its numeric value) - 1**
 
-_// FOR loop example_
-let cupsOfSugar = 5
+        _// FOR loop example_
 
-for (let cupsAdded = 1; cupsAdded < cupsOfSugar; cupsAdded++){
-    console.log (cupsAdded + ' cup was added [for loop]');
-};
+        let cupsOfSugar = 5
+
+        for (let cupsAdded = 1; cupsAdded < cupsOfSugar; cupsAdded++){
+
+         console.log (cupsAdded + ' cup was added [for loop]');
+
+        };
 
 - The for loop has a clear initialization, condition, and increment section. It iterates **from 1 to cupsOfSugar - 1 ****_(i.e., 4 iterations when cupsOfSugar is 5)**_.
 - The loop executes exactly as many times as specified in the condition and doesn't go beyond that limit.

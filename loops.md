@@ -11,19 +11,23 @@ A for loop repeats until a specified condition evaluates to false.
 
       for (initialization; condition; afterthought) {
 
-      statement };
-- **Initialization:** This is where you initialize your loop control variable(s). It typically sets the initial value of a counter variable. For example, int i = 0; initializes a variable named i with the value of 0.
-- **Condition:** This is the condition that is evaluated before each iteration of the loop. If the condition evaluates to true, the loop continues; if it evaluates to false, the loop terminates. For example, i < 10; checks if the variable i is less than 10.
-- **Afterthought:** This is an expression that is executed at the end of each iteration of the loop. It's commonly used to update the loop control variable(s). For example, i++ increments the value of i by 1 after each iteration.
-- **Statement(s):** This is the block of code that you want to execute repeatedly as long as the condition remains true. It can be a single statement or a block of statements enclosed in curly braces {}.
+      statement
 
-      for (int i = 0; i < 10; i++) {
-  
-      // Statement(s) to be executed repeatedly
-  
-      console.log("the value of i is ", i);
-  
       };
+  
+1. **Initialization:** This is where you initialize your loop control variable(s). It typically sets the initial value of a counter variable. For example, int i = 0; initializes a variable named i with the value of 0.
+2. **Condition:** This is the condition that is evaluated before each iteration of the loop. If the condition evaluates to true, the loop continues; if it evaluates to false, the loop terminates. For example, i < 10; checks if the variable i is less than 10.
+3. **Afterthought:** This is an expression that is executed at the end of each iteration of the loop. It's commonly used to update the loop control variable(s). For example, i++ increments the value of i by 1 after each iteration.
+4. **Statement(s):** This is the block of code that you want to execute repeatedly as long as the condition remains true. It can be a single statement or a block of statements enclosed in curly braces {}.
+
+
+         for (int i = 0; i < 10; i++) {
+  
+        // Statement(s) to be executed repeatedly
+  
+        console.log("the value of i is ", i);
+  
+       };
 
 A for loop is often used when you know **how many times you want to iterate**.
 
@@ -57,12 +61,27 @@ In most cases if the increment afterthought isn't specified, it will result in i
 
 - A while statement looks as follows:
 
-      while (condition) {
+            while (condition) {
 
-      statement
+            statement
 
-      };
+            };
+  
+1. **Condition:** Inside the parentheses, you specify the condition that needs to be evaluated. As long as this condition evaluates to true, the loop will continue to execute. If the condition evaluates to false initially, the statement inside the loop will not be executed at all.
+2. **Statement:** This is the statement that you want to execute repeatedly as long as the condition remains true. It can be a single statement or a block of statements enclosed in curly braces {}.
 
+
+            let count = 0;
+
+            while (count < 5)
+
+            console.log(count++);
+
+   
+
+While loop are often used when **the number of iterations is not known** beforehand and depends on a specific condition.
+
+Condition is evaluated before executing the loop. If the condition is true, the code inside the loop is executed. If the condition is false, the code block is skipped, and the program continues to execute the code after the loop. After executing the code block, the condition is evaluated again. If it's still true, the code block is executed again. This process repeats until the condition becomes false.
 
 
 
